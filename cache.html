@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Offline Mode</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #00e6ff;
+    }
+    p {
+      font-size: 1.2em;
+      opacity: 0.8;
+    }
+    .retry {
+      margin-top: 25px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #00e6ff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .retry:hover {
+      background: #00b8cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚫 لا يوجد اتصال بالإنترنت</h1>
+  <p>انت في وضع أوفلاين. بعض الملفات مش متاحة حالياً.</p>
+  <button class="retry" onclick="location.reload()">🔄 إعادة المحاولة</button>
+</body>
+</html>
