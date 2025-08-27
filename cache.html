@@ -1,50 +1,23 @@
-<!DOCTYPE html>
-<html>
+<html manifest="psfree_lapse.cache">
 <head>
-  <meta charset="utf-8">
-  <title>Offline Mode</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #0d1117;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #00e6ff;
-    }
-    p {
-      font-size: 1.2em;
-      opacity: 0.8;
-    }
-    .retry {
-      margin-top: 25px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      background: #00e6ff;
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .retry:hover {
-      background: #00b8cc;
-    }
-  </style>
+<title>PSFree-Lapse Exploit For PS4 9.00</title>
+<link rel="shortcut icon" href="favicon.ico"></link>
+<style>
+body{background-image: url("logo.jpeg");background-repeat: no-repeat;background-size: cover;;background-position: center;background-color: rgb(53, 137, 194);
+color:black;font-size:20px;text-align:center;margin:0;overflow:hidden;}
+.info{overflow: hidden;position: fixed;position: absolute;top: 45%;left: 50%;font-size: 25px;font-family: sans-serif;color: black;transform: translate(-50%, -50%);}
+</style>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));msgs.innerHTML="Yousef Store Cache ... " + Percent + "%"};
+function DisplayCacheProgress(){
+setTimeout(function(){msgs.innerHTML="يوسف اسنور تم الحفظ ";},2000);
+setTimeout(function(){location.reload();},3000);
+}
+window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
 </head>
-<body>
-  <h1>🚫 لا يوجد اتصال بالإنترنت</h1>
-  <p>انت في وضع أوفلاين. بعض الملفات مش متاحة حالياً.</p>
-  <button class="retry" onclick="location.reload()">🔄 إعادة المحاولة</button>
+<body style=overflow:hidden>
+<div id=msgs class=info style='-webkit-font-feature-settings:"tnum";font-feature-settings:"tnum";'></div>
 </body>
 </html>
